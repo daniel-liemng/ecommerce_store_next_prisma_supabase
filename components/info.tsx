@@ -12,9 +12,9 @@ const Info = ({ data }: InfoProps) => {
     <div className=''>
       <h1 className='text-3xl font-bold text-gray-900'>{data?.name}</h1>
       <div className='mt-3 flex items-center justify-between'>
-        <p className='text-2xl text-gray-900'>
+        <div className='text-2xl text-gray-900'>
           <Currency value={data?.price} />
-        </p>
+        </div>
       </div>
 
       <hr className='my-4' />
