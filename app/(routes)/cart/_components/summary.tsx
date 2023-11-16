@@ -52,7 +52,12 @@ const Summary = () => {
         </div>
       </div>
 
-      <Button type='button' onClick={onCheckout} className='w-full mt-6'>
+      <Button
+        type='button'
+        onClick={onCheckout}
+        disabled={items?.length === 0}
+        className='w-full mt-6'
+      >
         Checkout
       </Button>
     </div>
